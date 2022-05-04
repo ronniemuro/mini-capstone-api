@@ -3,7 +3,7 @@ GET http://localhost:3000/products
 
 ### products show
 
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/1
 
 ### products create
 
@@ -15,4 +15,16 @@ Content-type: application/json
   "price": "price",
   "image_url": "image",
   "description": "description"
+}
+
+### products update
+
+PATCH http://localhost:3000/products/9
+Content-type: application/json
+
+{
+  "name": "name x2",
+  "price": "price x2",
+  "image_url": "url x2",
+  "description": "description x2"
 }
