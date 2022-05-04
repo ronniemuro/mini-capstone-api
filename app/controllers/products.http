@@ -1,0 +1,18 @@
+### products index
+GET http://localhost:3000/products
+
+### products show
+
+GET http://localhost:3000/products/3
+
+### products create
+
+POST http://localhost:3000/products
+Content-type: application/json
+
+{
+  "name": "name",
+  "price": "price",
+  "image_url": "image",
+  "description": "description"
+}
