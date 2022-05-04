@@ -3,7 +3,7 @@ GET http://localhost:3000/products
 
 ### products show
 
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/4
 
 ### products create
 
@@ -28,3 +28,7 @@ Content-type: application/json
   "image_url": "url x2",
   "description": "description x2"
 }
+
+### products destroy
+
+DELETE http://localhost:3000/products/4
