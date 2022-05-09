@@ -1,13 +1,13 @@
 ### products index
-GET http://localhost:3000/products
+GET http://localhost:3000/products.json
 
 ### products show
 
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/2.json
 
 ### products create
 
-POST http://localhost:3000/products
+POST http://localhost:3000/products.json
 Content-type: application/json
 
 {
@@ -19,7 +19,7 @@ Content-type: application/json
 
 ### products update
 
-PATCH http://localhost:3000/products/9
+PATCH http://localhost:3000/products/16.json
 Content-type: application/json
 
 {
@@ -31,4 +31,4 @@ Content-type: application/json
 
 ### products destroy
 
-DELETE http://localhost:3000/products/4
+DELETE http://localhost:3000/products/17.json
