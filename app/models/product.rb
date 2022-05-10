@@ -4,10 +4,10 @@ class Product < ApplicationRecord
   end
 
   def tax
-    price * 0.09
+    (price * 0.09).round(2)
   end
 
   def total
-    tax + price
+    (tax + price).round(2)
   end
 end
