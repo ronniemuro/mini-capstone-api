@@ -12,19 +12,19 @@ Content-type: application/json
 
 {
   "name": "name",
-  "price": "price",
+  "price": 1,
   "image_url": "image",
   "description": "description"
 }
 
 ### products update
 
-PATCH http://localhost:3000/products/16.json
+PATCH http://localhost:3000/products/19.json
 Content-type: application/json
 
 {
   "name": "name x2",
-  "price": "price x2",
+  "price": 3,
   "image_url": "url x2",
   "description": "description x2"
 }
