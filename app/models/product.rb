@@ -6,6 +6,7 @@ class Product < ApplicationRecord
   validates :description, length: { in: 5..500 }
   has_many :images
   belongs_to :supplier
+  has_many :orders
   #accepts_nested_attributes_for :images
 
   def is_discounted?

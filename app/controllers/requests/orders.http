@@ -1,0 +1,11 @@
+### create order
+
+POST http://localhost:3000/orders.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4MjA4Njh9.iXfulBNJeup3IG58yNHeMsaBNC-UzuEoG2IlqVxmj5k
+
+{
+  "product_id" : 1,
+  "quantity" : 3,
+  "user_id" : "user_id"
+}
