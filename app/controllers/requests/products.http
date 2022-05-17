@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4MjA4Njh9.iXfulBNJeup3IG58yNHeMsaBNC-UzuEoG2IlqVxmj5k
+
 ### products index
 GET http://localhost:3000/products.json
 
@@ -9,6 +11,7 @@ GET http://localhost:3000/products/1.json
 
 POST http://localhost:3000/products.json
 Content-type: application/json
+Authorization: Bearer {{jwt}}
 
 {
   "name": "name",

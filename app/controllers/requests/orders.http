@@ -1,11 +1,24 @@
-### create order
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4MjA4Njh9.iXfulBNJeup3IG58yNHeMsaBNC-UzuEoG2IlqVxmj5k
+
+### Order create
 
 POST http://localhost:3000/orders.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4MjA4Njh9.iXfulBNJeup3IG58yNHeMsaBNC-UzuEoG2IlqVxmj5k
+Authorization: Bearer {{jwt}}
 
 {
   "product_id" : 1,
-  "quantity" : 3,
-  "user_id" : "user_id"
+  "quantity" : 3
 }
+
+
+### Order index
+
+GET http://localhost:3000/orders.json
+Authorization: Bearer {{jwt}}
+
+
+### Order show
+
+GET http://localhost:3000/orders/11.json
+Authorization: Bearer {{jwt}}
